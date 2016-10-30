@@ -109,7 +109,7 @@ namespace Tarih
         /// <returns></returns>
         private static int NumberOfDaysSinceYearStart(int year, int month, int day)
         {
-            // Aylara ait gün sayısı aşağıdaki gibidir: 
+            // Aylara ait gün sayısı aşağıdaki gibidir:
             // [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
             // https://tr.wikipedia.org/wiki/Miladi_takvim#Y.C4.B1lba.C5.9F.C4.B1
 
@@ -185,7 +185,7 @@ namespace Tarih
 
             // Aya kadar olan gün sayısını da modlayıp ayın başında kaç gün oynadığını bulalım
             // int[] days = { 0, 31, 59, 90, 120, 151,
-            //               181, 212, 243, 273, 304, 334 };             
+            //               181, 212, 243, 273, 304, 334 };
             int[] dayOfWeekDiffMoon =
             {
                 0, 3, 3, 6, 1, 4,
@@ -203,7 +203,7 @@ namespace Tarih
                              leapYearDiff
                          ) % 7;
 
-            // Bu bulduğumuz algoritmayi biraz daha sadeleştirdiğimiz zaman 
+            // Bu bulduğumuz algoritmayi biraz daha sadeleştirdiğimiz zaman
             // Sakamoto'nun haftanın günü algoritmasını bulabilirsiniz
             // https://en.wikipedia.org/wiki/Determination_of_the_day_of_the_week#Implementation-dependent_methods
 
